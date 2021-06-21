@@ -14,10 +14,10 @@ body {
   font-size: 0.875rem;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 .inner {
-  width: 600px;
+  max-width: 600px; //maxつけないとレスポンシブデザインおかしくなる
   margin:0 auto;
 }
 .container {
@@ -68,6 +68,7 @@ main {
 * * * * * * * * */
 .detail_a {
   display: flex;
+  align-items: flex-start;
   img {
     width: 270px;
     margin-bottom: 25px;
@@ -104,4 +105,26 @@ main {
 }
 footer {
   padding: 15px 0;
+}
+
+/* * * * * * * * *
+*	レスポンシブデザイン
+* * * * * * * * */
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+  header {
+    padding:0 10px;
+  }
+  .mainimage {
+    padding:0 10px;
+  }
+  .detail_a {
+    flex-direction: column;
+  }
+  .detail_a img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
 }
