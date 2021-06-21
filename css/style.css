@@ -55,13 +55,13 @@ main .mainimage {
   margin-bottom: 60px;
 }
 
-section {
+#index_s {
   background: #fff;
   padding: 30px 0;
   margin-bottom: 60px;
 }
 
-section h2 {
+#index_s h2 {
   margin: 0;
   margin-bottom: 10px;
   text-align: left;
@@ -73,5 +73,57 @@ section h2 {
 
 .list li li:last-child {
   margin-bottom: 0;
+}
+
+/* * * * * * * * *
+*	detail
+* * * * * * * * */
+.detail_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail_a img {
+  width: 270px;
+  margin-bottom: 25px;
+  margin-right: 60px;
+  margin-bottom: 100px;
+}
+
+.detail_b h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.detail_b p {
+  margin-bottom: 20px;
+}
+
+.detail_b p a {
+  color: #333;
+}
+
+.detail_b p a a:hover {
+  opacity: 0.8;
+}
+
+.detail_b dl {
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  padding: 16px 0;
+  margin-bottom: 25px;
+}
+
+.detail_b dt {
+  float: left;
+}
+
+.detail_b dd {
+  margin-left: 75px;
+}
+
+footer {
+  padding: 15px 0;
 }
 /*# sourceMappingURL=style.css.map */
